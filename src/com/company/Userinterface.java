@@ -16,15 +16,15 @@ public class Userinterface {
     String textcolor = "";
 
     switch (color) {
-    case "red" -> textcolor = ANSI_RED;
-    case "yellow" -> textcolor = ANSI_YELLOW;
-    case "green" -> textcolor = ANSI_GREEN;
-    case "blue" -> textcolor = ANSI_BLUE;
+      case "red" -> textcolor = ANSI_RED;
+      case "yellow" -> textcolor = ANSI_YELLOW;
+      case "green" -> textcolor = ANSI_GREEN;
+      case "blue" -> textcolor = ANSI_BLUE;
     }
 
     System.out.println(textcolor + listName + ANSI_RESET);
     for (int i = 0; i < listen.size(); i++) {
-      System.out.println(textcolor + (i+1) + " " + listen.get(i).getName()+ " (" + listen.get(i).getLevelOfSignificance()+ ")" + ANSI_RESET);
+      System.out.println(textcolor + (i + 1) + " " + listen.get(i).getName() + " (" + listen.get(i).getLevelOfSignificance() + ")" + ANSI_RESET);
     }
 
     System.out.println();
