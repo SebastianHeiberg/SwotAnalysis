@@ -4,13 +4,13 @@ import java.util.ArrayList;
 
 public class Main {
 
-  public ArrayList<Strength> strengths = new ArrayList<>();
-  public ArrayList<Weaknesses> weaknesses = new ArrayList<>();
-  public ArrayList<Opportunities> opportunities = new ArrayList<>();
-  public ArrayList<Threats> threats = new ArrayList<>();
+  public ArrayList<SWOT> strengths = new ArrayList<>();
+  public ArrayList<SWOT> weaknesses = new ArrayList<>();
+  public ArrayList<SWOT> opportunities = new ArrayList<>();
+  public ArrayList<SWOT> threats = new ArrayList<>();
   Userinterface userinterface = new Userinterface();
 
-  public void addItems() {
+  private void addItems() {
     //Strengths
     Strength strength1 = new Strength("Have decent understanding of the basics", 4);
     Strength strength2 = new Strength("Want to learn new codeing skills", 5);
@@ -42,10 +42,10 @@ public class Main {
 
   public void printAll (){
     addItems();
-    userinterface.printListStrength(strengths,"red","Strengths");
-    userinterface.printListWeaknesses(weaknesses,"yellow","Weaknesses");
-    userinterface.printListOppotunities(opportunities,"green","Oppotunities");
-    userinterface.printListThreats(threats,"blue","Threats");
+    userinterface.printListSWOT(strengths,"red","Strengths");
+    userinterface.printListSWOT(weaknesses,"yellow","Weaknesses");
+    userinterface.printListSWOT(opportunities,"green","Oppotunities");
+    userinterface.printListSWOT(threats,"blue","Threats");
   }
 
 
